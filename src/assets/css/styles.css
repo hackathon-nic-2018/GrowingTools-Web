@@ -449,6 +449,7 @@ input, textarea {
 
 .grid-item {
   display: grid;
+  background: red;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   justify-items: center;
@@ -497,14 +498,6 @@ input, textarea {
   font-size: 33px;
   margin-bottom: .40rem;
   color: var(--main-text-color-alt);
-}
-
-.grid-chart {
-  background: var(--border-color);
-  margin-left: 3rem;
-  margin-right: 3rem;
-  height: 350px;
-  margin-top: 2rem;
 }
 
 .table {
@@ -659,6 +652,7 @@ tr:hover td {
 
 .grid-item {
   display: grid;
+  background: red;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   justify-items: center;
@@ -707,12 +701,4 @@ tr:hover td {
   font-size: 33px;
   margin-bottom: .40rem;
   color: var(--main-text-color-alt);
-}
-
-.grid-chart {
-  background: var(--border-color);
-  margin-left: 3rem;
-  margin-right: 3rem;
-  height: 350px;
-  margin-top: 2rem;
 }
