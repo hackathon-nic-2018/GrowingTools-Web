@@ -1,15 +1,15 @@
 .container-sidebar {
     background: var(--sidebar-color);
-    padding: 4rem 0;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    position: fixed;
 }
 .sidebar-link {
     display: inline-block;
     padding: 15px 20px;
-    // margin-top: 1rem;
     width: 100%;
     color: var(--main-text-color-alt);
     &:hover{
@@ -31,4 +31,27 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.sidebar-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.input-search {
+    padding: 10px 20px;
+    color: var(--main-text-color);
+    width: 270px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.icon {
+    position: absolute;
+    left: 265px;
+    color: var(--main-text-color);
+    font-size: 18px;
 }

@@ -53,7 +53,7 @@ input, textarea {
   --main-color: #00C851;
   --main-color-dark: #007E33;
   --container-color: #1E282C;
-  --sidebar-color: #222d32;
+  --sidebar-color: #222D32;
   --sidebar-color-dark: #1e282c;
   --border-color: #e0e0e0;
   --main-text-color: #53575A;
@@ -65,16 +65,6 @@ input, textarea {
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
-}
-
-.container {
-  display: grid;
-}
-
-.container-dashboard {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 1fr;
 }
 
 .nav {
@@ -232,7 +222,7 @@ input, textarea {
 
 .container-sidebar {
   background: var(--sidebar-color);
-  padding: 4rem 0;
+  padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,6 +235,7 @@ input, textarea {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  position: fixed;
 }
 
 .sidebar-link {
@@ -291,6 +282,36 @@ input, textarea {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+}
+
+.sidebar-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+}
+
+.input-search {
+  padding: 10px 20px;
+  color: var(--main-text-color);
+  width: 270px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.icon {
+  position: absolute;
+  left: 265px;
+  color: var(--main-text-color);
+  font-size: 18px;
 }
 
 .container-login {
