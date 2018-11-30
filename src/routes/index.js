@@ -5,8 +5,8 @@ router.get('/', (request, response) => {
     response.render('index')
 })
 
-router.get('/hola', (request, response) => {
-    response.render('hola')
+router.get('/empleadoRegister', (request, response) => {
+    response.render('empleadoRegister')
 })
 
 module.exports = router;
