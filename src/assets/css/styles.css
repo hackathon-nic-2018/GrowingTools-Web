@@ -67,7 +67,15 @@ input, textarea {
   --z-modal: 1000;
 }
 
+.dashboard {
+  display: grid;
+  grid-template-areas: "sidebar content";
+  grid-auto-columns: 20% 80%;
+}
+
 .nav {
+  position: relative;
+  z-index: var(--z-modal);
   background-color: var(--sidebar-color);
   padding-left: 4rem;
   padding-right: 4rem;
@@ -222,10 +230,11 @@ input, textarea {
 
 .container-sidebar {
   background: var(--sidebar-color);
-  padding: 0 2rem;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  grid-area: sidebar;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -236,11 +245,15 @@ input, textarea {
   -ms-flex-line-pack: center;
   align-content: center;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
 }
 
 .sidebar-link {
   display: inline-block;
-  padding: 15px 20px;
+  padding: 15px 0;
   width: 100%;
   color: var(--main-text-color-alt);
 }
@@ -251,19 +264,6 @@ input, textarea {
 
 .sidebar-list {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .sidebar-item {
@@ -373,4 +373,76 @@ input, textarea {
   width: 50%;
   font-size: 17px;
   font-weight: bold;
+}
+
+.content {
+  grid-area: content;
+  padding: 1.5rem;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.grid-box {
+  background: var(--sidebar-color);
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.item {
+  font-size: 30px;
+  margin-bottom: .60rem;
+  color: #FF7171;
+}
+
+.item-product {
+  font-size: 20px;
+  margin-bottom: .60rem;
+  color: #FF7171;
+}
+
+.title {
+  font-size: 18px;
+  color: var(--main-text-color-alt);
+}
+
+.emoji {
+  font-size: 33px;
+  margin-bottom: .40rem;
+  color: var(--main-text-color-alt);
+}
+
+.grid-chart {
+  background: var(--border-color);
+  margin-left: 3rem;
+  margin-right: 3rem;
+  height: 350px;
+  margin-top: -2rem;
 }

@@ -1,4 +1,6 @@
 .nav {
+    position: relative;
+    z-index: var(--z-modal);
     background-color: var(--sidebar-color);
     padding-left: 4rem;
     padding-right: 4rem;
