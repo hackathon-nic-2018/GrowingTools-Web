@@ -5,31 +5,18 @@ router.get('/', (request, response) => {
     response.render('index')
 })
 
-router.get('/empleadoRegister', (request, response) => {
-    response.render('empleadoRegister')
+router.get('/empleado', (request, response) => {
+    response.render('empleados')
 })
 
-router.get('/login', (request, response) => {
-    response.render('login');
-})
-
-
-router.get('/dashboard', (request, response) => {
-    response.render('dashboard');
-})
-
-router.get('/empleados', (request, response) => {
-    response.render('empleados');
+router.get('/grafico', (request, response) => {
+    response.render('grafico')
 })
 router.get('/inventario', (request, response) => {
-    response.render('inventario');
+    response.render('inventario')
 })
-router.get('/grafico', (request, response) => {
-    response.render('grafico');
-})
-
-router.get('/ventas', (request, response) => {
-    response.render('ventas');
+router.get('/dashboard', (request, response) => {
+    response.render('dashboard')
 })
 
 module.exports = router;
