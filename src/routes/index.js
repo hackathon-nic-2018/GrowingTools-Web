@@ -21,6 +21,12 @@ router.get('/dashboard', (request, response) => {
 router.get('/empleados', (request, response) => {
     response.render('empleados');
 })
+router.get('/inventario', (request, response) => {
+    response.render('inventario');
+})
+router.get('/grafico', (request, response) => {
+    response.render('grafico');
+})
 
 
 

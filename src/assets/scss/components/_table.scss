@@ -1,0 +1,31 @@
+.table {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;align-items: center;
+    flex-direction: column;
+}
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: var(--main-color);
+	border-bottom: solid 5px var(--main-color-dark);
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: var(--main-color);
+	color: white;
+}

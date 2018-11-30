@@ -29,11 +29,14 @@ router.get('/api/Empresa', (request,res,next) => {
 
 router.get('/api/Inventario', function(request,res, next){
     let req = new mssql.Request();
-    req.query(`select I.ID_inventario,I.Precio_venta,I.Costo,C.Categoria,Cantidad,I.Nombre,P.NombreProveedor
-    from Inventario as I
+    req.query(`
+    select Emp.Empresa,I.Nombre,I.Cantidad,I.Porcentaje_critico,I.Costo,I.Descontinuado
+    ,I.Ilustracion,P.NombreProveedor,C.Categoria
+    from Inventario as I 
+    inner join Empresas as Emp  on Emp.ID_empresa = I.ID_empresa
+    inner join Proveedores as P on I.ID_proveedor = P.ID_proveedor
     inner join Categoria as C on C.ID_categoria = I.ID_categoria
-    inner join Proveedores as P on P.ID_proveedor = I.ID_proveedor
-    where I.ID_empresa = (select Emp.ID_empresa from Empresas as Emp where Empresa = 'Paisanos')`,function(err, result){
+   `,function(err, result){
         if(err) {
             return next(err);
         }

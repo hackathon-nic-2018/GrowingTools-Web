@@ -8,7 +8,8 @@ if(buttonSend) {
         const precioVenta = document.getElementById('precioVenta').value;
         const costosVariables = document.getElementById('costosVariables').value;
 
-        const puntoEquilibrio = costosAnuales / (precioVenta - costosVariables);
+        const puntoEquilibrio = parseInt(costosAnuales) / (parseInt(precioVenta) - parseInt(costosVariables));
+
         const value = document.querySelector('.value');
 
         value.textContent = puntoEquilibrio;
@@ -23,3 +24,23 @@ if(buttonSend) {
 
     });
 }
+
+const apiFetch = async () => {
+    const response = await fetch('/api/Inventario');
+    const data = await response.json();
+    
+    let body = document.getElementById('body')
+
+    data.forEach(element => {
+       body.innerHTML +=` 
+        <tr> 
+            <td>${element.Empresa}</td> 
+            <td>${element.Nombre}</td>
+            <td>${element.Cantidad}</td>
+            <td>${element.NombreProveedor}</td>
+            <td>${element.Categoria}</td>
+        </tr>
+        `
+    });
+}
+apiFetch()
