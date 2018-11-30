@@ -504,7 +504,7 @@ input, textarea {
   margin-left: 3rem;
   margin-right: 3rem;
   height: 350px;
-  margin-top: -2rem;
+  margin-top: 2rem;
 }
 
 .table {
@@ -714,5 +714,5 @@ tr:hover td {
   margin-left: 3rem;
   margin-right: 3rem;
   height: 350px;
-  margin-top: -2rem;
+  margin-top: 2rem;
 }
