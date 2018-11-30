@@ -1,4 +1,9 @@
 @import "base/base";
 @import "config/config";
 @import "config/mixins";
-@import "componentes/nav";
+@import "layout/layout";
+@import "components/nav";
+@import "components/seccion";
+@import "components/footer";
+
+@import "components/login";
