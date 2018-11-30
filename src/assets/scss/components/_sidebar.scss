@@ -4,14 +4,13 @@
     display: flex;
     grid-area: sidebar;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-start;
     position: fixed;
     top: 0;
     left: 0;
     width: 20%;
     height: 100vh;
-    // z-index: var(--z-ba);
 }
 .sidebar-link {
     display: inline-block;
@@ -31,14 +30,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
+    position: relative;
+    top: 180px;
 }
 
 .sidebar-form {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 4rem;
     margin-top: 3rem;
 }
