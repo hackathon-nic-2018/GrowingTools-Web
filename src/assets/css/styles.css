@@ -215,15 +215,8 @@ input, textarea {
   display: flex;
   grid-area: sidebar;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -ms-flex-line-pack: start;
   align-content: flex-start;
-
-  justify-content: center;
-  align-content: center;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -246,24 +239,15 @@ input, textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
   text-align: center;
   position: relative;
-  top: 180px;
-}
-
+  top: 180px; }
 
 .sidebar-form {
   display: flex;
   justify-content: center;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
-  align-items: center;
-
   margin-bottom: 4rem;
   margin-top: 3rem; }
 
@@ -373,70 +357,4 @@ input, textarea {
   margin-left: 3rem;
   margin-right: 3rem;
   height: 350px;
-  margin-top: -2rem;
-}
-
-.modal-overlay {
-  display: none;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-  z-index: var(--z-modal);
-  width: 100%;
-  height: 100%;
-}
-
-.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.modal-overlay.active .modal {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.modal {
-  background: #fff;
-  width: 450px;
-  height: 200px;
-  border-radius: 8px;
-  border: 1px solid var(--main-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 10px 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-size: 15px;
-  color: var(--main-text-color);
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.value {
-  font-size: 20px;
-  color: var(--main-color);
-
   margin-top: -2rem; }
