@@ -1,0 +1,15 @@
+:root {
+  --main-color: #00C851;
+  --main-color-dark: #007E33;
+  --container-color: #1E282C;
+  --sidebar-color: #222d32;
+  --sidebar-color-dark: #1e282c;
+  --border-color: #e0e0e0;
+  --main-text-color: #53575A;
+  --secondary-text-color: #777777;
+  --opacity-color: rgba(0,0,0,.12);
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; }

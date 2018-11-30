@@ -1,3 +1,4 @@
-body {
-    background: red;
-}
+@import "base/base";
+@import "config/config";
+
+@import "componentes/nav";
